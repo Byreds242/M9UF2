@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Document</title>
+</head>
+<body>
+  
+    <div class="barra-inicio">
+      <img src="img/logo.svg " alt="Logo de la empresa" class="logo">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#container-1">AC1</a></li>
+        <li><a href="#container-2">AC2</a></li>
+        <li><a href="#video">AC3</a></li>
+      </ul>
+    </div>
+    
+  
+
+  <div class="container-fluid splash" id="splash">
+    <div class="container">
+      <h1>AC4</h1>
+
+    </div>
+  </div>
+
+  <div class="container-0" >
+    <div class="container-ac0">
+
+      <div class="card-container">
+  <div class="card">
+    <a href="#container-1">
+      <img class="card-img-top" src="img/ac1-portada.jpg" alt="Card image cap">
+    </a>
+    
+    <div class="card-body">
+      <p class="card-text">Creación de imagenes por pixeles con rect, circle, las coordenadas y el tamaño.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="#container-2">
+      <img class="card-img-top" src="img/ac2-portada.jpg" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <p class="card-text">Pruebas con distintos tipos de audio como mp3, wav, flac, opus, etc.</p>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#video">
+      <img class="card-img-top" src="img/ac3-portada.jpg" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <p class="card-text">Creación del un video con cortes hecho con kdenlive y frontend.</p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <div class="container-1" id="container-1" >
+    <div class="container-ac1">
+      <!-- CASA-->
+      <div class="house" style="background-color: #dcdcdc;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300"
+          height="300">
+          <rect x="0" y="0" width="300" height="3000" fill="#87cdeb" />
+          <rect x="0" y="220" width="300" height="80" fill="#8ceb8c" />
+          <rect x="70" y="120" width="160" height="140" fill="#ffa078" />
+          <polygon points="150,30 230,120 70,120" style="fill:rgb(148, 97, 55);" />
+          <rect x="125" y="190" width="50" height="70" fill="#87410f" />
+          <rect x="80" y="140" width="40" height="40" fill="#f0f5ff" />
+          <rect x="180" y="140" width="40" height="40" fill="#f0f5ff" />
+          <circle r="3" cx="135" cy="230" fill="yellow" />
+          <circle r="25" cx="50" cy="50" fill="yellow" />
+        </svg>
+      </div>
+      <!-- COCHE -->
+      <div class="house" style="background-color: #dcdcdc;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300"
+          height="300">
+          <rect x="35" y="140" width="230" height="80" fill="red" />
+          <rect x="80" y="80" width="140" height="60" fill="red" />
+          <rect x="35" y="160" width="20" height="20" fill="yellow" />
+          <rect x="245" y="160" width="20" height="20" fill="yellow" />
+          <rect x="90" y="90" width="55" height="40" fill="#87cdeb" />
+          <rect x="155" y="90" width="55" height="40" fill="#87cdeb" />
+          <circle r="30" cx="90" cy="220" fill="#323232" />
+          <circle r="15" cx="90" cy="220" fill="#646464" />
+          <circle r="30" cx="210" cy="220" fill="#323232" />
+          <circle r="15" cx="210" cy="220" fill="#646464" />
+        </svg>
+      </div>
+      <!-- ROBOT -->
+      <div class="house" style="background-color: #dcdcdc;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300"
+          height="300">
+          <rect x="0" y="0" width="300" height="3000" fill="#f5f5f5" />
+          <rect x="100" y="170" width="100" height="120" fill="#a0a0a0" />
+          <rect x="40" y="190" width="60" height="20" fill="#a0a0a0" />
+          <rect x="200" y="190" width="60" height="20" fill="#a0a0a0" />
+          <rect x="80" y="60" width="140" height="100" fill="#a0a0a0" rx="10" ry="10" />
+          <rect x="145" y="30" width="10" height="30" fill="#a0a0a0" />
+          <circle r="10" cx="150" cy="190" fill="red" />
+          <circle r="10" cx="150" cy="230" fill="#01ff00" />
+          <circle r="10" cx="150" cy="270" fill="blue" />
+          <circle r="15" cx="120" cy="110" fill="#01ff00" />
+          <circle r="15" cx="180" cy="110" fill="#01ff00" />
+          <circle r="10" cx="120" cy="110" fill="white" />
+          <circle r="10" cx="180" cy="110" fill="white" />
+          <circle r="10" cx="150" cy="20" fill="red" />
+
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="container-2" id="container-2">
+    <div class="container-ac2">
+      <h2><img src="img/biblioteca.png" alt="Biblioteca"> Biblioteca</h2>
+      <ul>
+        <li onclick="loadSong('audio/mp3.mp3', 'MP3')">Sonido MP3</li>
+        <li onclick="loadSong('audio/wav.wav', 'WAV')">Sonido WAV</li>
+        <li onclick="loadSong('audio/flac.flac', 'FLAC')">Sonido FLAC</li>
+        <li onclick="loadSong('audio/mp2.mp2', 'MP2')">Sonido MP2</li>
+        <li onclick="loadSong('audio/oggvorbis.ogg', 'OGG VORBIS')">Sonido Ogg Vorbis</li>
+        <li onclick="loadSong('audio/opus.opus', 'OPUS')">Sonido Opus</li>
+      </ul>
+    </div>
+    <!-- Reproductor de audio (Oculto) -->
+    <audio id="audio-player"></audio>
+    <div class="menu-ac2">
+      <div class="controls">
+        <!-- Controles de velocidad a la izquierda -->
+        <div id="speed-controls">
+          <div id="speed-controls-1">
+            <span id="speed-value">x1.0</span>
+            <img src="img/menos_velocidad.png" id="btn-menos-velocidad">
+            <img src="img/mas_velocidad.png" id="btn-mas-velocidad">
+          </div>
+          <div id="speed-controls-2">
+            <!-- Imagen de mute a la derecha -->
+            <img src="img/mute.png" id="btn-mute">
+          </div>
+        </div>
+        <!-- Otros controles -->
+        <img src="img/bajar_vol.png" id="btn-bajar-volumen">
+        <img src="img/flecha_izq.png" id="btn-atras">
+        <img src="img/play.png" id="btn-play">
+        <img src="img/flecha_der.png" id="btn-adelante">
+        <img src="img/subir_vol.png" id="btn-subir-volumen">
+      </div>
+      <div class="progress-container">
+        <input type="range" id="progress-bar" min="0" value="0">
+      </div>
+    </div>
+  </div>
+  <div class="container-3" id="video">
+    <div class="container-ac3">
+      <section class="video-container">
+        <h2>Video</h2>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/rRg4knP-ES0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </section>
+    </div>
+  </div>
+  
+</body>
+<script src="script.js"></script>
+</html>
